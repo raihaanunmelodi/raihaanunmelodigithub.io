@@ -6,96 +6,70 @@
     <title>Portofolio Saya</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
         }
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 0rem;
+            padding: 1rem;
         }
-        .hero-image {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero-text {
+        nav {
+            background-color: #555;
+            padding: 0.5rem;
             text-align: center;
+        }
+        nav a {
             color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
         }
-        .hero-text h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero-text p {
-            font-size: 1.2rem;
-        }
-        .portfolio {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 2rem;
+        .container {
+            padding: 2rem;
+            text-align: center;
         }
         .portfolio-item {
             margin: 1rem;
-            width: 300px;
-            background-color: #fff;
+            display: inline-block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
-            transition: transform 0.3s ease;
         }
         .portfolio-item img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-        }
-        footer {
-            text-align: center;
-            padding: 0rem;
-            background-color: #333;
-            color: #fff;
+        .portfolio-item:hover img {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Portofolio Melodi</h1>
+        <h1>Portofolio Saya</h1>
     </header>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Selamat Datang di Portofolio Saya</h1>
-            <p>Temukan kreasi dan karya terbaik saya di sini</p>
-        </div>
-    </div>
-    <div class="portfolio">
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Karya</a>
+        <a href="#">Kontak</a>
+    </nav>
+    <div class="container">
         <div class="portfolio-item">
-            <img src="project1.jpg" alt="Proyek 1">
-            <h3></h3>
-            <p>Nama saya Raihaanun Melodi Islamina Azora 1.</p>
-            <p>Biasa di panggil Melodi</p>
-            <p>Saya bersekolah di SMKN 2 Semarang</p>
-            <p>Mengambil jurusan PPLG 2 1.</p>
-            <p>Memiliki hobi mendengarkan musik</p>
+            <img src="gambar1.jpg" alt="Karya 1">
+            <h3>Portofolio Melodi</h3>
+            <p>Deskripsi karya 1.</p>
         </div>
-        
+        <div class="portfolio-item">
+            <img src="gambar2.jpg" alt="Karya 2">
+            <h3>Judul Karya 2</h3>
+            <p>Deskripsi karya 2.</p>
         </div>
         <!-- Tambahkan item portofolio lainnya di sini -->
     </div>
-    <footer>
-        <p>Kontak: raihaanunmelodi@gmail.com | Telepon: 085799674714</p>
-    </footer>
 </body>
 </html>
-
