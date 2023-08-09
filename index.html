@@ -3,99 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Melodi</title>
+    <title>Melodi</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Comic Sans MS;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #FFB7B2
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #CD5E77;
+            color: #FFF;
+            padding: 10px;
             text-align: center;
-            padding: 2rem;
         }
-        .hero-image {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero-text {
+        nav {
+            background-color: #613613;
+            padding: 10px;
             text-align: center;
+        }
+        nav a {
             color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
         }
-        .hero-text h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero-text p {
-            font-size: 1.2rem;
-        }
-        .portfolio {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-        .portfolio-item {
-            margin: 1rem;
-            width: 300px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .portfolio-item:hover {
-            transform: translateY(-5px);
+        section {
+            padding: 20px;
+            text-align: center;
         }
         footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #333;
+            background-color: #CD5E77;
             color: #fff;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Portofolio Melodi</h1>
+        <h1>Portofolio Raihaanun</h1>
     </header>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Selamat Datang di Portofolio Saya</h1>
-            <p>Semoga hari-hari mu menyenangkan</p>
-        </div>
-    </div>
-    <div class="portfolio">
-        <div class="portfolio-item">
-            <img src="project1.jpg" alt="Proyek 1">
-            <h3>Biodata diri Saya</h3>
-            <p>Saya bersekolah di SMKN 2 Semarang</p>
-            <p>Mengambil jurusan PPLG</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="project2.jpg" alt="Proyek 2">
-            <h3>Biodata diri saya</h3>
-            <p>Alamat rumah saya berada di Tlogo Indah, rt 04/rw 05</p>
-            <p>Memiliki hobi Mendengarkan musik</p></p>
-        </div>
-        <!-- Tambahkan item portofolio lainnya di sini -->
-    </div>
+    <nav>
+        <a href="#about">Tentang Saya</a>
+        <a href="#projects">Riwayat Pendidikan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <section id="about">
+        <h2>Tentang Melodi</h2>
+        <p> Nama : Raihaanun Melodi Islamina Azora
+        <p> Kelas : XI 
+        <p> Jurusan : PPLG 2 
+        <p> Tgl lahir : 31 Januari 2007
+        <p> Hobi : Mendengarkan Musik </p>
+    </section>
+    <section id="projects">
+        <h2>Riwayat Pendidikan</h2>
+        <p> TK  : Pertiwi 43 Semarang
+        <p> SD  : SDN Genuk Sari 02 Semarang
+        <p> SMP : SMPN 43 Semarang </p>
+    </section>
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p> Email    : raihaanunmelodi@gmail.com
+        <p> IG       : @raihaanunmelodimelodii_ </p>
+    </section>
     <footer>
-        <p>Kontak: raihaanunmelodi@gmail.com | Telepon: 123-456-789</p>
+        
     </footer>
 </body>
 </html>
