@@ -3,77 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Portofolio Melodi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            background-color: #555;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .container {
             padding: 2rem;
+        }
+        .hero-image {
+            background-image: url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-text {
             text-align: center;
+            color: #fff;
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
         }
         .portfolio-item {
             margin: 1rem;
-            display: inline-block;
+            width: 300px;
+            background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
+            transition: transform 0.3s ease;
         }
         .portfolio-item img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            transition: transform 0.3s ease;
         }
-        .portfolio-item:hover img {
-            transform: scale(1.1);
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Portofolio Saya</h1>
+        <h1>Portofolio Melodi</h1>
     </header>
-    <nav>
-        <a href="#">Beranda</a>
-        <a href="#">Tentang</a>
-        <a href="#">Karya</a>
-        <a href="#">Kontak</a>
-    </nav>
-    <div class="container">
-        <div class="portfolio-item">
-            <h3>Portofolio Melodi</h3>
-            <p>Haloooo</p>
-            <p>Nama Saya Raihaanun Melodi Islamina Azora</p>
-            <p>Biasa di panggil dengan nam Melodi</p>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p>Semoga hari-hari mu menyenangkan</p>
         </div>
+    </div>
+    <div class="portfolio">
         <div class="portfolio-item">
+            <img src="project1.jpg" alt="Proyek 1">
+            <h3>Biodata diri Saya</h3>
             <p>Saya bersekolah di SMKN 2 Semarang</p>
-            <p>saya mengambil jurusan PPLG</p>
-            <p>Hobi saya mendengarkan musik</p>
-            <p>Harapan memasuki jurusan PPLG dapat memperdalam ilmu teknologi dan dapat mengikuti perkembangan teknologi di dunia kerja</p>
+            <p>Mengambil jurusan PPLG</p>
         </div>
-        <div class=" portofolio item">
-            <p>No telpon: 085799674714</p>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Proyek 2">
+            <h3>Biodata diri saya</h3>
+            <p>Alamat rumah saya berada di Tlogo Indah, rt 04/rw 05</p>
+            <p>Memiliki hobi Mendengarkan musik</p></p>
+        </div>
         <!-- Tambahkan item portofolio lainnya di sini -->
     </div>
+    <footer>
+        <p>Kontak: raihaanunmelodi@gmail.com | Telepon: 123-456-789</p>
+    </footer>
 </body>
 </html>
